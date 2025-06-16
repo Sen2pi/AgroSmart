@@ -1,13 +1,8 @@
-<img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" class="logo" width="120"/>
+<img src="logo.svg" class="logo" width="120"/>
 
 # 🌱 AgroSmart
 
 **Monitorização Inteligente para Pequenos Agricultores**
-
-[
-[
-[
-[
 
 **Startup portuguesa de tecnologia agrícola** que democratiza a agricultura de precisão através de sensores IoT acessíveis e inteligência artificial[^1].
 
@@ -331,13 +326,4 @@ Este projeto é um **protótipo educacional** desenvolvido para demonstrar conce
 
 **Made with ❤️ in Portugal** 🇵🇹
 
-<div style="text-align: center">⁂</div>
-
-[^1]: AgroSmart-Plano-de-Negocio-Completo-1.pdf
-
-[^2]: paste-2.txt
-
-[^3]: paste-3.txt
-
-[^4]: paste-4.txt
 
