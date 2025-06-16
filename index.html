@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AgroSmart - Agricultura Inteligente para o Futuro</title>
+    <meta name="description" content="Solução IoT completa para pequenos agricultores portugueses. Sensores inteligentes + App móvel por apenas €150 + €12/mês.">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="logo.svg" type="image/svg+xml">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <img src="logo.svg" alt="AgroSmart Logo" class="nav__logo">
+                <h2>AgroSmart</h2>
+            </div>
+            <ul class="nav__menu">
+                <li><a href="#home" class="nav__link active">Início</a></li>
+                <li><a href="#produto" class="nav__link">Produto</a></li>
+                <li><a href="#planos" class="nav__link">Planos</a></li>
+                <li><a href="#mockups" class="nav__link">App</a></li>
+                <li><a href="#implementacao" class="nav__link">Implementação</a></li>
+                <li><a href="#sobre" class="nav__link">Sobre</a></li>
+            </ul>
+            <button class="nav__toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section section--home active">
+            <div class="container">
+                <div class="hero">
+                    <div class="hero__content">
+                        <div class="hero__logo-section">
+                            <img src="logo.svg" alt="AgroSmart Logo" class="hero__logo">
+                        </div>
+                        <h1 class="hero__title">AgroSmart</h1>
+                        <p class="hero__subtitle">Agricultura Inteligente para o Futuro</p>
+                        <p class="hero__description">
+                            Democratizamos a agricultura de precisão para pequenos agricultores portugueses 
+                            através de sensores IoT acessíveis e inteligência artificial.
+                        </p>
+                        <div class="hero__stats">
+                            <div class="stat">
+                                <h3 class="stat__number">40%</h3>
+                                <p class="stat__label">Redução desperdício água</p>
+                            </div>
+                            <div class="stat">
+                                <h3 class="stat__number">160.000</h3>
+                                <p class="stat__label">Explorações agrícolas alvo</p>
+                            </div>
+                            <div class="stat">
+                                <h3 class="stat__number">€150</h3>
+                                <p class="stat__label">Preço acessível</p>
+                            </div>
+                        </div>
+                        <div class="hero__actions">
+                            <button class="btn btn--primary btn--lg" onclick="showSection('planos')">
+                                Ver Planos
+                            </button>
+                            <button class="btn btn--outline btn--lg" onclick="showSection('produto')">
+                                Saber Mais
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Section -->
+        <section id="produto" class="section">
+            <div class="container">
+                <h2 class="section__title">A Nossa Solução</h2>
+                <p class="section__description">
+                    Combinamos hardware IoT avançado com software intuitivo para revolucionar a agricultura portuguesa
+                </p>
+
+                <div class="product-features">
+                    <div class="feature-card">
+                        <div class="feature-card__icon">🌱</div>
+                        <h3>Sensores IoT Inteligentes</h3>
+                        <p>Monitorização em tempo real de humidade do solo, temperatura, condutividade elétrica e níveis de nutrientes</p>
+                        <ul>
+                            <li>Precisão ±3% humidade</li>
+                            <li>Resistência IP67</li>
+                            <li>Conectividade LoRaWAN</li>
+                            <li>Bateria 2+ anos</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-card__icon">📱</div>
+                        <h3>App Móvel Intuitiva</h3>
+                        <p>Interface portuguesa simplificada com dashboards em tempo real e recomendações personalizadas</p>
+                        <ul>
+                            <li>Dashboard em tempo real</li>
+                            <li>Alertas automáticos</li>
+                            <li>Recomendações IA</li>
+                            <li>Relatórios detalhados</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-card__icon">🤖</div>
+                        <h3>Inteligência Artificial</h3>
+                        <p>Algoritmos avançados que aprendem com os seus dados para otimizar irrigação e produtividade</p>
+                        <ul>
+                            <li>Previsões meteorológicas</li>
+                            <li>Otimização automática</li>
+                            <li>Análise de tendências</li>
+                            <li>Suporte técnico local</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="value-proposition">
+                    <h3>Porque Escolher a AgroSmart?</h3>
+                    <div class="benefits-grid">
+                        <div class="benefit">
+                            <span class="benefit__icon">💰</span>
+                            <h4>Preço Acessível</h4>
+                            <p>3x mais barato que concorrentes internacionais</p>
+                        </div>
+                        <div class="benefit">
+                            <span class="benefit__icon">🇵🇹</span>
+                            <h4>Suporte Local</h4>
+                            <p>Equipa portuguesa, interface em português</p>
+                        </div>
+                        <div class="benefit">
+                            <span class="benefit__icon">🎯</span>
+                            <h4>Foco Pequenos Agricultores</h4>
+                            <p>Desenvolvido especificamente para PME agrícolas</p>
+                        </div>
+                        <div class="benefit">
+                            <span class="benefit__icon">🌍</span>
+                            <h4>Sustentável</h4>
+                            <p>Reduz impacto ambiental e desperdício</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Plans Section -->
+        <section id="planos" class="section">
+            <div class="container">
+                <h2 class="section__title">Planos e Preços</h2>
+                <p class="section__description">
+                    Escolha o plano ideal para a sua exploração agrícola
+                </p>
+
+                <div class="pricing-toggle">
+                    <button class="pricing-toggle__btn active" data-period="monthly">Mensal</button>
+                    <button class="pricing-toggle__btn" data-period="annual">Anual (2 meses grátis)</button>
+                </div>
+
+                <div class="pricing-grid">
+                    <!-- Starter Plan -->
+                    <div class="pricing-card">
+                        <div class="pricing-card__header">
+                            <h3>Starter</h3>
+                            <p>Ideal para pequenas propriedades</p>
+                        </div>
+                        <div class="pricing-card__price">
+                            <span class="price-amount" data-monthly="€150" data-annual="€150">€150</span>
+                            <span class="price-period">sensor inicial</span>
+                        </div>
+                        <div class="pricing-card__subscription">
+                            <span class="subscription-price" data-monthly="€12" data-annual="€120">€12</span>
+                            <span class="subscription-period" data-monthly="/mês" data-annual="/ano">/mês</span>
+                        </div>
+                        <ul class="pricing-card__features">
+                            <li>✅ 1 Sensor IoT incluído</li>
+                            <li>✅ App móvel completa</li>
+                            <li>✅ Dashboard em tempo real</li>
+                            <li>✅ Alertas básicos</li>
+                            <li>✅ Suporte por email</li>
+                            <li>✅ Relatórios mensais</li>
+                        </ul>
+                        <button class="btn btn--outline btn--full-width" onclick="selectPlan('starter')">
+                            Começar Grátis
+                        </button>
+                    </div>
+
+                    <!-- Professional Plan -->
+                    <div class="pricing-card pricing-card--featured">
+                        <div class="pricing-card__badge">Mais Popular</div>
+                        <div class="pricing-card__header">
+                            <h3>Professional</h3>
+                            <p>Para agricultores sérios</p>
+                        </div>
+                        <div class="pricing-card__price">
+                            <span class="price-amount" data-monthly="€450" data-annual="€450">€450</span>
+                            <span class="price-period">kit com 3 sensores</span>
+                        </div>
+                        <div class="pricing-card__subscription">
+                            <span class="subscription-price" data-monthly="€30" data-annual="€300">€30</span>
+                            <span class="subscription-period" data-monthly="/mês" data-annual="/ano">/mês</span>
+                        </div>
+                        <ul class="pricing-card__features">
+                            <li>✅ 3 Sensores IoT incluídos</li>
+                            <li>✅ Recomendações IA avançadas</li>
+                            <li>✅ Integração meteorológica</li>
+                            <li>✅ Alertas personalizados</li>
+                            <li>✅ Suporte telefónico</li>
+                            <li>✅ Relatórios semanais</li>
+                            <li>✅ Análise de tendências</li>
+                            <li>✅ Consultoria mensal (1h)</li>
+                        </ul>
+                        <button class="btn btn--primary btn--full-width" onclick="selectPlan('professional')">
+                            Escolher Professional
+                        </button>
+                    </div>
+
+                    <!-- Enterprise Plan -->
+                    <div class="pricing-card">
+                        <div class="pricing-card__header">
+                            <h3>Enterprise</h3>
+                            <p>Para grandes explorações</p>
+                        </div>
+                        <div class="pricing-card__price">
+                            <span class="price-amount">Personalizado</span>
+                            <span class="price-period">5+ sensores</span>
+                        </div>
+                        <div class="pricing-card__subscription">
+                            <span class="subscription-price">Contactar</span>
+                            <span class="subscription-period">para orçamento</span>
+                        </div>
+                        <ul class="pricing-card__features">
+                            <li>✅ 5+ Sensores IoT</li>
+                            <li>✅ API personalizada</li>
+                            <li>✅ Integração ERP</li>
+                            <li>✅ Dashboard corporativo</li>
+                            <li>✅ Suporte dedicado</li>
+                            <li>✅ Relatórios personalizados</li>
+                            <li>✅ Formação presencial</li>
+                            <li>✅ SLA garantido</li>
+                        </ul>
+                        <button class="btn btn--outline btn--full-width" onclick="selectPlan('enterprise')">
+                            Contactar Vendas
+                        </button>
+                    </div>
+                </div>
+
+                <div class="pricing-guarantee">
+                    <h4>🛡️ Garantia de 30 dias</h4>
+                    <p>Experimente sem riscos. Se não ficar satisfeito, devolvemos o seu dinheiro.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- App Mockups Section -->
+        <section id="mockups" class="section">
+            <div class="container">
+                <h2 class="section__title">A Nossa Aplicação</h2>
+                <p class="section__description">
+                    Interface intuitiva desenvolvida especificamente para agricultores portugueses
+                </p>
+
+                <div class="mockups-gallery">
+                    <div class="mockup-card" onclick="openModal('mockup1')">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1750100450/gpt4o_images/xkmrplyqe7ifjxls4ueb.png"
+                             alt="Ecrã de Login" class="mockup-card__image" />
+                        <div class="mockup-card__content">
+                            <h3 class="mockup-card__title">Ecrã de Login</h3>
+                            <p class="mockup-card__description">
+                                Interface de autenticação simples e intuitiva
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="mockup-card" onclick="openModal('mockup2')">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1750100535/gpt4o_images/h4ohvxmusxo037ohdltn.png"
+                             alt="Dashboard Principal" class="mockup-card__image" />
+                        <div class="mockup-card__content">
+                            <h3 class="mockup-card__title">Dashboard Principal</h3>
+                            <p class="mockup-card__description">
+                                Visualização em tempo real dos dados dos sensores
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="mockup-card" onclick="openModal('mockup3')">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1750100590/gpt4o_images/iezlr8krur4mv0uynryj.png"
+                             alt="Recomendações e Alertas" class="mockup-card__image" />
+                        <div class="mockup-card__content">
+                            <h3 class="mockup-card__title">Recomendações e Alertas</h3>
+                            <p class="mockup-card__description">
+                                Sistema inteligente de recomendações de irrigação
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="app-features">
+                    <h3>Funcionalidades da App</h3>
+                    <div class="app-features-grid">
+                        <div class="app-feature">
+                            <span class="app-feature__icon">📊</span>
+                            <h4>Dashboard em Tempo Real</h4>
+                            <p>Visualize todos os dados dos seus sensores numa interface clara e intuitiva</p>
+                        </div>
+                        <div class="app-feature">
+                            <span class="app-feature__icon">🔔</span>
+                            <h4>Alertas Inteligentes</h4>
+                            <p>Receba notificações quando a sua cultura precisar de atenção</p>
+                        </div>
+                        <div class="app-feature">
+                            <span class="app-feature__icon">🧠</span>
+                            <h4>Recomendações IA</h4>
+                            <p>Sugestões personalizadas baseadas nos seus dados históricos</p>
+                        </div>
+                        <div class="app-feature">
+                            <span class="app-feature__icon">📈</span>
+                            <h4>Relatórios Detalhados</h4>
+                            <p>Acompanhe o progresso e identifique oportunidades de melhoria</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Implementation Section -->
+        <section id="implementacao" class="section">
+            <div class="container">
+                <h2 class="section__title">Planos de Implementação</h2>
+                <p class="section__description">
+                    Cronograma detalhado do nosso crescimento até 2030
+                </p>
+
+                <div class="timeline-container">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1750100848/pplx_code_interpreter/a15ed16b_kd0is2.jpg"
+                         alt="Cronograma de desenvolvimento da AgroSmart" class="timeline-image" />
+                </div>
+
+                <div class="milestones-grid">
+                    <div class="milestone-card" onclick="toggleMilestone(this)">
+                        <div class="milestone-card__header">
+                            <h3>Validação MVP</h3>
+                            <span class="milestone-card__date">Q2 2025</span>
+                        </div>
+                        <div class="milestone-card__content">
+                            <p><strong>Investimento:</strong> €25k</p>
+                            <p>Finalização dos protótipos e testes de campo com agricultores locais</p>
+                        </div>
+                    </div>
+
+                    <div class="milestone-card" onclick="toggleMilestone(this)">
+                        <div class="milestone-card__header">
+                            <h3>Primeiros 10 clientes</h3>
+                            <span class="milestone-card__date">Q3 2025</span>
+                        </div>
+                        <div class="milestone-card__content">
+                            <p><strong>Investimento:</strong> €15k</p>
+                            <p>Marketing inicial e validação de mercado</p>
+                        </div>
+                    </div>
+
+                    <div class="milestone-card" onclick="toggleMilestone(this)">
+                        <div class="milestone-card__header">
+                            <h3>Ronda Seed €150k</h3>
+                            <span class="milestone-card__date">Q4 2025</span>
+                        </div>
+                        <div class="milestone-card__content">
+                            <p><strong>Objetivo:</strong> Escalamento da operação</p>
+                            <p>Contratação de equipa e aumento de produção</p>
+                        </div>
+                    </div>
+
+                    <div class="milestone-card" onclick="toggleMilestone(this)">
+                        <div class="milestone-card__header">
+                            <h3>Break-even</h3>
+                            <span class="milestone-card__date">Q1 2028</span>
+                        </div>
+                        <div class="milestone-card__content">
+                            <p><strong>Meta:</strong> 461 clientes ativos</p>
+                            <p>Ponto de equilíbrio operacional</p>
+                        </div>
+                    </div>
+
+                    <div class="milestone-card" onclick="toggleMilestone(this)">
+                        <div class="milestone-card__header">
+                            <h3>Expansão Internacional</h3>
+                            <span class="milestone-card__date">Q3 2028</span>
+                        </div>
+                        <div class="milestone-card__content">
+                            <p><strong>Mercado:</strong> Espanha</p>
+                            <p>Entrada no mercado espanhol</p>
+                        </div>
+                    </div>
+
+                    <div class="milestone-card" onclick="toggleMilestone(this)">
+                        <div class="milestone-card__header">
+                            <h3>Ronda Series A €500k</h3>
+                            <span class="milestone-card__date">Q1 2029</span>
+                        </div>
+                        <div class="milestone-card__content">
+                            <p><strong>Objetivo:</strong> Crescimento acelerado</p>
+                            <p>Expansão para França e novos produtos</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="financial-projections">
+                    <h3>Projeções Financeiras</h3>
+                    <div class="financial-grid">
+                        <div class="financial-card">
+                            <h4>2025</h4>
+                            <div class="financial-stat">
+                                <span class="financial-stat__label">Clientes</span>
+                                <span class="financial-stat__value">50</span>
+                            </div>
+                            <div class="financial-stat">
+                                <span class="financial-stat__label">Receita</span>
+                                <span class="financial-stat__value">€14.700</span>
+                            </div>
+                        </div>
+
+                        <div class="financial-card financial-card--highlight">
+                            <h4>2030</h4>
+                            <div class="financial-stat">
+                                <span class="financial-stat__label">Clientes</span>
+                                <span class="financial-stat__value">5.617</span>
+                            </div>
+                            <div class="financial-stat">
+                                <span class="financial-stat__label">Receita</span>
+                                <span class="financial-stat__value">€1.651.398</span>
+                            </div>
+                            <div class="financial-stat">
+                                <span class="financial-stat__label">Lucro</span>
+                                <span class="financial-stat__value financial-stat__value--positive">€858.328</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="sobre" class="section">
+            <div class="container">
+                <h2 class="section__title">Sobre a AgroSmart</h2>
+                <p class="section__description">
+                    Conheça a equipa e a visão por trás da revolução AgTech portuguesa
+                </p>
+
+                <div class="about-content">
+                    <div class="mission-vision">
+                        <div class="mission">
+                            <h3>🎯 Nossa Missão</h3>
+                            <p>Democratizar a agricultura de precisão para pequenos e médios agricultores portugueses, 
+                               tornando a tecnologia IoT acessível e fácil de usar.</p>
+                        </div>
+                        <div class="vision">
+                            <h3>🔮 Nossa Visão</h3>
+                            <p>Ser a referência em soluções AgTech na Península Ibérica, contribuindo para uma 
+                               agricultura mais sustentável e eficiente.</p>
+                        </div>
+                    </div>
+
+                    <div class="team-section">
+                        <h3>👥 Equipa Fundadora</h3>
+                        <div class="team-grid">
+                            <div class="team-member">
+                                <div class="team-member__avatar">DN</div>
+                                <h4>Daniel Nunes</h4>
+                                <p class="team-member__role">CEO & CTO</p>
+                                <p>Liderança estratégica e desenvolvimento tecnológico</p>
+                            </div>
+                            <div class="team-member">
+                                <div class="team-member__avatar">KP</div>
+                                <h4>Karim Patatas</h4>
+                                <p class="team-member__role">COO & Head of Product</p>
+                                <p>Operações e desenvolvimento de produto</p>
+                            </div>
+                            <div class="team-member">
+                                <div class="team-member__avatar">VN</div>
+                                <h4>Vasco Neves</h4>
+                                <p class="team-member__role">CFO & Head of Marketing</p>
+                                <p>Finanças e estratégia de mercado</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-cta">
+                        <h3>Pronto para Revolucionar a Sua Agricultura?</h3>
+                        <p>Junte-se aos agricultores que já estão a usar tecnologia para aumentar a produtividade e reduzir custos.</p>
+                        <div class="cta-buttons">
+                            <button class="btn btn--primary btn--lg" onclick="showSection('planos')">
+                                Ver Planos
+                            </button>
+                            <button class="btn btn--outline btn--lg" onclick="openContactModal()">
+                                Falar Connosco
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal for mockups -->
+    <div id="modal" class="modal">
+        <div class="modal__content">
+            <button class="modal__close" onclick="closeModal()">&times;</button>
+            <img id="modal-image" src="" alt="" class="modal__image" />
+            <div class="modal__info">
+                <h3 id="modal-title"></h3>
+                <p id="modal-description"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Modal -->
+    <div id="contact-modal" class="modal">
+        <div class="modal__content modal__content--form">
+            <button class="modal__close" onclick="closeContactModal()">&times;</button>
+            <div class="contact-form">
+                <h3>Fale Connosco</h3>
+                <p>Interessado na AgroSmart? Deixe os seus dados e entraremos em contacto.</p>
+                <form id="contact-form" onsubmit="submitContactForm(event)">
+                    <div class="form-group">
+                        <label class="form-label">Nome *</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Email *</label>
+                        <input type="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Telefone</label>
+                        <input type="tel" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Tamanho da exploração agrícola</label>
+                        <select class="form-control">
+                            <option>Selecione...</option>
+                            <option>Menos de 5 hectares</option>
+                            <option>5-10 hectares</option>
+                            <option>10-50 hectares</option>
+                            <option>Mais de 50 hectares</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Mensagem</label>
+                        <textarea class="form-control" rows="4" placeholder="Como podemos ajudar?"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full-width">
+                        Enviar Mensagem
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
